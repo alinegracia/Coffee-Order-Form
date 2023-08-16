@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.1/css/bootstrap.min.css">
+    <title>CoffeeRun</title>
+</head>
+<body class="container mt-3">
+    <header>
+        <h1>CoffeeRun</h1>
+    </header>
+    
+    <section>
+        <div class="panel panel-default">
+            <div class="panel--body">
+                <form data-coffee-order="form">
+                    <div class="mb-3 mt-3">
+                        <label for="coffeeOrder">Coffee Order</label>
+                        <input class="form-control" name="coffee" id="coffeeOrder" autofocus>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="emailInput">Email</label>
+                        <input class="form-control" type="email" name="emailAddress" id="emailInput" value="" placeholder="email@who.com">
+                    </div>
+
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="short">
+                            Short
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="tall">
+                            Tall
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="size" value="grande">
+                            Grande
+                        </label>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="flavorShot">Flavor Shot</label>
+                        <select id="flavorShot" class="form-select" name="flavor">
+                            <option value="">None</option>
+                            <option value="caramel">Caramel</option>
+                            <option value="almond">Almond</option>
+                            <option value="mocha">Mocha</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3 mt-3">
+                        <label for="strengthLevel" class="form-label">Caffeine Rating</label>
+                        <input class="form-range" name="strength" id="strengthLevel" type="range" value="30">
+                    </div>
+
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
